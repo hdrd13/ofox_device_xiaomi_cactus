@@ -12,7 +12,7 @@
 
 
 
-/dev/block/platform/bootdevice/by-name/userdata /data ext4 noatime,nosuid,nodev,noauto_da_alloc wait,check,quota,reservedsize=128M,formattable,resize,encryptable=/dev/block/platform/bootdevice/by-name/metadata
+/dev/block/platform/bootdevice/by-name/userdata /data ext4 noatime,nosuid,nodev,noauto_da_alloc,errors=panic wait,check,quota,reservedsize=128M,formattable,resize,forcefdeorfbe=/dev/block/platform/bootdevice/by-name/metadata
 
 /dev/block/platform/bootdevice/by-name/cache /cache ext4 noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
 
@@ -77,4 +77,3 @@
 
 
 /dev/block/platform/bootdevice/by-name/vbmeta /vbmeta emmc defaults defaults
-/dev/block/platform/bootdevice/by-name/cust /cust ext4 ro,nosuid,nodev,barrier=1 wait,check
