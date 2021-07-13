@@ -14,6 +14,12 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_cereus.mk
+# Inherit from our custom product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
+PRODUCT_DEVICE := cereus
+PRODUCT_NAME := omni_cereus
+PRODUCT_BRAND := xiaomi
+PRODUCT_MODEL := Redmi 6
+PRODUCT_MANUFACTURER := Xiaomi
