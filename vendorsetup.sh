@@ -28,6 +28,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_DISABLE_APP_MANAGER=1
 	export FOX_DELETE_AROMAFM=1
 	export OF_MAINTAINER=MapWin
+	export OF_MAINTAINER_AVATAR="/home/mapwin/avatar.png"
 	add_lunch_combo omni_"$FDEVICE"-eng
 	add_lunch_combo omni_"$FDEVICE"-userdebug
 fi
