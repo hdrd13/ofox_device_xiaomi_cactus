@@ -22,7 +22,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 # OrangeFox
         export OF_SCREEN_H=2160
         export OF_STATUS_INDENT_LEFT=32
-	     export OF_STATUS_INDENT_RIGHT=32
+	export OF_STATUS_INDENT_RIGHT=32
         export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
         export OF_USE_MAGISKBOOT=1
         export OF_AB_DEVICE=0
